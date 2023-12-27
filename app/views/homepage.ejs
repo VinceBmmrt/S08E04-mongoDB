@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- on utilise Bootstrap pour le style de notre mini app : très pratique il suffit d'utiliser les classes fournies par Bootstrap pour avoir une app avec un style de base (que l'on pourrait customiser par la suite) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Pokédex</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1 class="my-4">Pokédex</h1>
+        <!-- my-4 : classe de Bootstrap qui permet de rajouter des marges autour de mon élément 
+            m-4 = ajoute des margs tout autour
+            my-4 = ajoute des marges en haut et en bas
+            mx-4 = ajoute des marges à gauche et à droite
+        -->
+
+        <!-- trouvé sur la doc de Bootstrap : List Group -->
+        <ul class="list-group">
+            <% for( const pokemon of pokemons ) { %>
+                <li class="list-group-item"><%= pokemon.name %></li>
+            <% } %>
+        </ul>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

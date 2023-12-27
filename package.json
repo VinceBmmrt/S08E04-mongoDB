@@ -1,0 +1,26 @@
+{
+  "name": "s08e04-mongodb-flore-oclock",
+  "version": "1.0.0",
+  "description": "## Un poil de vocabulaire - *Document* : un enregistrement. Dans une BDD SQL, cela correspondrait plus ou moins à une ligne dans une table. - *Collection* : presque équivalent à une table. C'est un ensemble non structuré de documents (c'est-à-dire qu'ils n'ont pas forcément tous le même format). - *BSON* : _Binary JSON_. Un format développé par et pour MongoDB, basé sur la notation JSON.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Cheesecake/S08E04-mongoDB-Flore-Oclock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Cheesecake/S08E04-mongoDB-Flore-Oclock/issues"
+  },
+  "homepage": "https://github.com/O-clock-Cheesecake/S08E04-mongoDB-Flore-Oclock#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^6.1.0"
+  }
+}
